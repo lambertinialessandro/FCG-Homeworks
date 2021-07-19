@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+    /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700|Inconsolata:400,700);
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 600px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 48px;
+    margin: 144px 0 24px 0;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 48px;
+    margin: 0 0 24px 0;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 48px 0 24px 0;
+}
+
+p, ul {
+    margin: 0 0 24px 0;
+}
+
+ul ul {
+    margin: 0 0 0 0;
+}
+
+pre {
+    margin: 0 0 24px 0;
+}
+
+code {
+    font-family: Inconsolata, monospace;
+}
+
+@media print {
+    body {
+        margin: 72px 72px;
+    }
+    @page {
+        margin: 48px 48px;
+    }
+}
+
+    </style>
+	
+	<!-- slide show -->
+	<script>  
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }
+	</script> 
+	<style>  
+		.showSlide {  
+            display: none  
+        }  
+        .showSlide img {  
+                width: 100%;  
+            }  
+        .slidercontainer {  
+            max-width: 1000px;  
+            position: relative;  
+            margin: auto;
+			
+        }  
+        .left, .right {  
+            cursor: pointer;  
+            position: absolute;  
+            top: 50%;  
+            width: auto;  
+            padding: 16px;  
+            margin-top: -22px;  
+            color: white;  
+            font-weight: bold;  
+            font-size: 18px;  
+            transition: 0.6s ease;  
+            border-radius: 0 3px 3px 0;  
+        }  
+        .right {  
+            right: 0;  
+            border-radius: 3px 0 0 3px;  
+        }  
+        .left:hover, .right:hover {  
+            background-color: rgba(115, 115, 115, 0.8);  
+        }  
+        .content {  
+            color: #000000//#eff5d4;  
+            font-size: 30px;  
+            padding: 8px 12px;  
+            position: absolute;  
+            top: 240px;  
+            width: 100%;  
+            text-align: center;  
+        }  
+        .active {  
+            background-color: #717171;  
+        }  
+        .fade {  
+            -webkit-animation-name: fade;  
+            -webkit-animation-duration: 1.5s;  
+            animation-name: fade;  
+            animation-duration: 1.5s;  
+        }  
+        @-webkit-keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+  
+        @keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+    </style> 
+
+	<!-- image full sceen -->
+	<style>
+		.img { cursor:zoom-in; }
+		.img:-webkit-full-screen { cursor:zoom-out; }
+		.img:-moz-full-screen { cursor:zoom-out; }
+		.img:-ms-fullscreen { cursor:zoom-out; }
+		.img:fullscreen { cursor:zoom-out; }
+	</style>
+	<script>
+		function toggleFullscreen(elem) {
+		  elem = elem || document.documentElement;
+		  if (!document.fullscreenElement && !document.mozFullScreenElement &&
+			!document.webkitFullscreenElement && !document.msFullscreenElement) {
+			if (elem.requestFullscreen) {
+			  elem.requestFullscreen();
+			} else if (elem.msRequestFullscreen) {
+			  elem.msRequestFullscreen();
+			} else if (elem.mozRequestFullScreen) {
+			  elem.mozRequestFullScreen();
+			} else if (elem.webkitRequestFullscreen) {
+			  elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+			}
+		  } else {
+			if (document.exitFullscreen) {
+			  document.exitFullscreen();
+			} else if (document.msExitFullscreen) {
+			  document.msExitFullscreen();
+			} else if (document.mozCancelFullScreen) {
+			  document.mozCancelFullScreen();
+			} else if (document.webkitExitFullscreen) {
+			  document.webkitExitFullscreen();
+			}
+		  }
+		}
+	</script>
+
+	<!-- comparison slider -->
+	<style>
+		* {box-sizing: border-box;}
+
+		.img-comp-container {
+		  position: relative;
+		  height: 350px;
+		  left: -75px;
+		  max-width: 1000px;
+		  margin: auto;
+		}
+
+		.img-comp-img {
+		  position: absolute;
+		  width: auto;
+		  height: auto;
+		  overflow: hidden;
+		}
+
+		.img-comp-img img {
+		  display: block;
+		  vertical-align: middle;
+		}
+
+		.img-comp-slider {
+		  position: absolute;
+		  z-index: 9;
+		  cursor: ew-resize;
+		  /*set the appearance of the slider:*/
+		  width: 4px;
+		  height: 300px;
+		  background-color: #2196F3;
+		  opacity: 0.7;
+		  border-radius: 0%;
+		  border: 1px solid #000000;
+		}
+		
+		.img_comp{
+		  width: 720px;
+		  height: 300px;
+		}
+	</style>
+	<script>
+		function initComparisons() {
+		  var x, i;
+		  /* Find all elements with an "overlay" class: */
+		  x = document.getElementsByClassName("img-comp-overlay");
+		  for (i = 0; i < x.length; i++) {
+			/* Once for each "overlay" element:
+			pass the "overlay" element as a parameter when executing the compareImages function: */
+			compareImages(x[i]);
+		  }
+		  function compareImages(img) {
+			var slider, img, clicked = 0, w, h;
+			/* Get the width and height of the img element */
+			w = img.offsetWidth;
+			h = img.offsetHeight;
+			/* Set the width of the img element to 50%: */
+			img.style.width = (w / 2) + "px";
+			/* Create slider: */
+			slider = document.createElement("DIV");
+			slider.setAttribute("class", "img-comp-slider");
+			/* Insert slider */
+			img.parentElement.insertBefore(slider, img);
+			/* Position the slider in the middle: */
+			slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+			slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+			/* Execute a function when the mouse button is pressed: */
+			slider.addEventListener("mousedown", slideReady);
+			/* And another function when the mouse button is released: */
+			window.addEventListener("mouseup", slideFinish);
+			/* Or touched (for touch screens: */
+			slider.addEventListener("touchstart", slideReady);
+			 /* And released (for touch screens: */
+			window.addEventListener("touchend", slideFinish);
+			function slideReady(e) {
+			  /* Prevent any other actions that may occur when moving over the image: */
+			  e.preventDefault();
+			  /* The slider is now clicked and ready to move: */
+			  clicked = 1;
+			  /* Execute a function when the slider is moved: */
+			  window.addEventListener("mousemove", slideMove);
+			  window.addEventListener("touchmove", slideMove);
+			}
+			function slideFinish() {
+			  /* The slider is no longer clicked: */
+			  clicked = 0;
+			}
+			function slideMove(e) {
+			  var pos;
+			  /* If the slider is no longer clicked, exit this function: */
+			  if (clicked == 0) return false;
+			  /* Get the cursor's x position: */
+			  pos = getCursorPos(e)
+			  /* Prevent the slider from being positioned outside the image: */
+			  if (pos < 0) pos = 0;
+			  if (pos > w) pos = w;
+			  /* Execute a function that will resize the overlay image according to the cursor: */
+			  slide(pos);
+			}
+			function getCursorPos(e) {
+			  var a, x = 0;
+			  e = e || window.event;
+			  /* Get the x positions of the image: */
+			  a = img.getBoundingClientRect();
+			  /* Calculate the cursor's x coordinate, relative to the image: */
+			  x = e.pageX - a.left;
+			  /* Consider any page scrolling: */
+			  x = x - window.pageXOffset;
+			  return x;
+			}
+			function slide(x) {
+			  /* Resize the image: */
+			  img.style.width = x + "px";
+			  /* Position the slider: */
+			  slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+			}
+		  }
+		}
+	</script>
+
+</head>
+<body>
+    <h1>Informations about the files inside this directory</h1>
+	<p>I wrote this readme file to explain how the files are distributed:</p>
+	
+	<ul>
+		<li>
+			Inside <b>out/naive</b> there are all the images from <b>01 to 08 [Mandatory]</b>;
+		</li>
+		<li>
+			Inside <b>out/path</b> there are all the images from <b>01 to 17 [Mandatory]</b> plus a test with <b>refraction "05_refraction" [Extra credits]</b>;
+		</li>
+		<li>
+			Inside <b>out/large_scenes</b> there are all the large scenes rendered from <b>01 ("rungholt") to 05 ("landscape") [Extra credits]</b>;
+		</li>
+		<li>
+			Inside <b>out/stratified</b> there are some images rendered with <b>"shade_stratified_sampling" [Extra credits]</b>;
+		</li>
+		<li>
+			Inside <b>out/my_scene</b> there are all the images for MYOS, from <b>01 to 05 [Extra credits]</b> + 1 extra image(old);
+		</li>
+		<li>
+			Inside <b>scripts</b> there are the scripts for the first <b>8(naive) + 17(path) [Mandatory]</b> exercise and the scripts for the other extra credits<b> 1(refraction) + 5(large scenes) + 5(MYOS) + 3(Stratified) [Extra credits]</b>;
+		</li>
+		<li>
+			Inside <b>test</b> there are 5 more test that I have used to create images for MYOS that i create from <b>y1 to y5 [Extra credits]</b> there is also the JSON for the refraction that goes inside "05_glass";
+		</li>
+		<li>
+			Inside <b>yocto_pathtrace</b> there is yocto_pathtrace.h and .cpp .
+		</li>
+	</ul>
+
+	<h2><b>Extra credits done:</b></h2>
+	<p>I have done 4 extra credits:</p>
+	
+	<ul>
+		<li>
+			<b>REFRACTION [2 pt]</b>: I have modify all the <b>6 functions (3 brdf + 3 delta)</b> adding an if and the correct function from yocto_shading.h;<br><br>
+		</li>
+		<li>
+			<b>Large Scenes [2 pt]</b>: I rendered all the 5 images with <b>"-s 1024 -r 1280"</b> for high resolution, and the render works well with 4 the scenes;<br>
+			I had some problems with "bistroexterior", so I rendered it with <b>"-s 256 -r 1024"</b>
+			<img class="img" src="error.png" /><br><br>
+		</li>
+		<li>
+			<b>Stratified Sampling 1 [4 pt]</b>: I created a new shader "shade_stratified_sampling" in which I use <b>sample_hemisphere_cos and sample_hemisphere_cos_pdf</b> to evaluate the <b>ingoing direction and the weight</b>;<br>
+			(you can check the differences beetwen pure random and stratified moving the blue slider)<br><br>
+			<div class="img-comp-container">
+			  <div class="img-comp-img">
+				<img class="img_comp" src="./out/stratified/02_matte_720_256.jpg">
+				<span style=" margin: 5px 0px 0 20px; ">Pure random</span>
+                <span style=" margin: 5px 0px 0 500px; ">Stratified</span>
+			  </div>
+			  <div class="img-comp-img img-comp-overlay">
+				<img class="img_comp" src="./out/naive/02_matte_720_256.jpg">
+			  </div>
+			</div>
+			
+			<script>
+				initComparisons();
+			</script>
+		</li>
+		<li style="margin-top: 50dp">
+			<b>MYOS [2 pt]</b>: I create <b>5 scenes</b> (click the image to zoom in):
+			<br><br>
+			<div class="slidercontainer">  
+				<div class="showSlide fade">  
+					<img id="01_myscene" class="img" src="./out/my_scene/01_myscene_1024_256.jpg" />  
+					<div class="content">01_myscene</div>  
+				</div>  
+				<div class="showSlide fade">  
+					<img id="02_myscene" class="img" src="./out/my_scene/02_myscene_1024_256.jpg"/>  
+					<div class="content">02_myscene</div>  
+				</div>  
+		  
+				<div class="showSlide fade">  
+					<img id="03_myscene" class="img" src="./out/my_scene/03_myscene_1024_256.jpg"/> 
+					<div class="content">03_myscene</div>  					
+				</div>  
+				<div class="showSlide fade">  
+					<img id="04_myscene" class="img" src="./out/my_scene/04_myscene_1024_256.jpg"/>   
+					<div class="content">04_myscene</div>  
+				</div>
+				<div class="showSlide fade">  
+					<img id="05_myscene" class="img" src="./out/my_scene/05_myscene_1024_256.jpg"/>  
+					<div class="content">05_myscene</div>  
+				</div>
+				<!-- Navigation arrows -->  
+				<a class="left" onclick="nextSlide(-1)">❮</a>  
+				<a class="right" onclick="nextSlide(1)">❯</a>  
+			</div>  
+			<script>
+				var slide_index = 1;
+				displaySlides(slide_index);
+				
+				document.getElementById('01_myscene').addEventListener('click', function() {
+				  toggleFullscreen(this);
+				});
+				document.getElementById('02_myscene').addEventListener('click', function() {
+				  toggleFullscreen(this);
+				});
+				document.getElementById('03_myscene').addEventListener('click', function() {
+				  toggleFullscreen(this);
+				});
+				document.getElementById('04_myscene').addEventListener('click', function() {
+				  toggleFullscreen(this);
+				});
+				document.getElementById('05_myscene').addEventListener('click', function() {
+				  toggleFullscreen(this);
+				});
+			</script>
+		</li>
+	</ul>
+	<br><br><br>
+	</body>
+</html>

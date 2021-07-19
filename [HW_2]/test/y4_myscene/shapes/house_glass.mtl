@@ -1,0 +1,17 @@
+Wavefront OBJ material file
+# Contains 1 materials
+
+newmtl Stained_Glass
+# Ns 0
+# Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+# map_Ka house_glass-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd house_glass-RGBA.png
+map_d house_glass-Alpha.png
+# illum 4
+# d 0.5
+# Tr 0.5
+# Tf 0.5 0.5 0.5

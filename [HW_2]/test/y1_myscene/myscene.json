@@ -1,0 +1,142 @@
+{
+  "asset": {
+    "copyright": "Model by me"
+  },
+  "cameras": {
+    "default": {
+      "lens": 0.05,
+      "aperture": 0.0,
+      "aspect": 2.4,
+      "lookat": [-1, 0.5, 1, 0, 0, 0, 0, 10, 0]
+    }
+  },
+  "environments": {
+    "sky": {
+      "emission": [1, 1, 1],
+      "emission_tex": "sky"
+    }
+  },
+  "instances": {
+    "floor": {
+      "shape": "floor",
+      "material": "floor"
+    },
+    "bunny": {
+      "shape": "bunny",
+      "frame": [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0],
+      "material": "arealight3"
+    },
+    "glass1": {
+      "shape": "bunny",
+      "frame": [1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, 0, -0.1],
+      "material": "glass1"
+    },
+    "glass2": {
+      "shape": "bunny",
+      "frame": [1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 0, -0.1],
+      "material": "glass2"
+    },
+    "glass3": {
+      "shape": "bunny",
+      "frame": [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.3],
+      "material": "glass3"
+    },
+    "glass4": {
+      "shape": "bunny",
+      "frame": [1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3, 0, 0.1],
+      "material": "glass4"
+    },
+    "glass5": {
+      "shape": "bunny",
+      "frame": [1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 0, 0.1],
+      "material": "glass5"
+    },
+    "glass6": {
+      "shape": "bunny",
+      "frame": [1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.3],
+      "material": "glass6"
+    },
+    "glass11": {
+      "shape": "bunny",
+      "frame": [0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, -0.3, 0, -0.1],
+      "material": "ref"
+    },
+    "glass21": {
+      "shape": "bunny",
+      "frame": [0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0.3, 0, -0.1],
+      "material": "ref"
+    },
+    "glass31": {
+      "shape": "bunny",
+      "frame": [0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 0, 0.3],
+      "material": "ref"
+    },
+    "glass41": {
+      "shape": "bunny",
+      "frame": [0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, -0.3, 0, 0.1],
+      "material": "ref"
+    },
+    "glass51": {
+      "shape": "bunny",
+      "frame": [0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0.3, 0, 0.1],
+      "material": "ref"
+    },
+    "glass61": {
+      "shape": "bunny",
+      "frame": [0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 0, -0.3],
+      "material": "ref"
+    }
+  },
+  "materials": {
+    "floor": {
+      "color": [0.7, 0.7, 0.7],
+      "color_tex": "floor"
+    },
+    "arealight3": {
+      "emission": [10, 10, 10]
+    },
+    "glass1": {
+      "specular": 1,
+      "transmission": 1,
+      "color": [1, 0.5, 0.5],
+      "roughness": 0
+    },
+    "glass2": {
+      "specular": 1,
+      "transmission": 1,
+      "color": [0.5, 1, 0.5],
+      "roughness": 0
+    },
+    "glass3": {
+      "specular": 1,
+      "transmission": 1,
+      "color": [0.5, 0.5, 1],
+      "roughness": 0
+    },
+    "glass4": {
+      "specular": 1,
+      "transmission": 1,
+      "color": [1, 0.5, 1],
+      "roughness": 0
+    },
+    "glass5": {
+      "specular": 1,
+      "transmission": 1,
+      "color": [0.5, 1, 1],
+      "roughness": 0
+    },
+    "glass6": {
+      "specular": 1,
+      "transmission": 1,
+      "color": [1, 1, 0.5],
+      "roughness": 0
+    },
+    "ref": {
+      "specular": 1,
+      "thin": false,
+      "transmission": 1,
+      "color": [1, 1, 1],
+      "roughness": 0
+    }
+  }
+}

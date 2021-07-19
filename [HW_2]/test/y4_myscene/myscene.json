@@ -1,0 +1,75 @@
+{
+  "asset": {
+    "copyright": "Model by me"
+  },
+  "cameras": {
+    "default": {
+      "lens": 0.01,
+      "aperture": 0.0,
+      "aspect": 2.4,
+      "lookat": [-6.5, 8, 5, 0, 5, 0, 0, 1, 0]
+    }
+  },
+  "environments": {
+    "sky": {
+      "emission": [0.6, 0.25, 1],
+      "emission_tex": "sky"
+    }
+  },
+  "instances": {
+    "background": {
+      "shape": "background",
+      "frame": [  0, 0, -1,
+				  -1, 0, 0,
+				  0, 1, 0,
+				  0, -3, -1],
+      "material": "background"
+    }, "house_frame": {
+      "shape": "house_frame",
+      "frame": [  0, 0, -1,
+				  -1, 0, 0,
+				  0, 1, 0,
+				  0, 0, 0],
+      "material": "house_frame"
+    }, "house_glass": {
+      "shape": "house_glass",
+      "frame": [  0, 0, -1,
+				  -1, 0, 0,
+				  0, 1, 0,
+				  0, 0, 0],
+      "material": "house_glass"
+    }, "house_light": {
+      "shape": "house_light",
+      "frame": [  0, 0, -1,
+				  -1, 0, 0,
+				  0, 1, 0,
+				  0, 0, 0],
+      "material": "house_light"
+    }
+  },
+  "materials": {
+    "background": {
+	  "specular": 0,
+      "color": [1, 1, 1],
+      "roughness": 0.1,
+      "color_tex": "background-rgba"
+    }, "house_frame": {
+	  "specular": 0,
+      "color": [1, 1, 1],
+      "roughness": 0.1,
+      "color_tex": "house_frame-rgba"
+    }, "house_glass": {
+	  "specular": 1,
+      "transmission": 1,
+      "color": [1, 1, 1],
+      "roughness": 0.1,
+      "color_tex": "house_glass-rgba"
+    }, "house_light": {
+	  "specular": 0,
+	  "emission": [100, 50, 0],
+      "color": [1, 1, 1],
+      "roughness": 0,
+      "color_tex": "house_light-rgba"
+    }
+  }
+}
