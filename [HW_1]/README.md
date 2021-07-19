@@ -6,13 +6,13 @@ First Homework for the course of Fundamentals of Computer Graphics 2020/2021.
 
 ## 📝 Assignment
 
--   text [Link 🔗](./Homework2.pdf)
+-   text [Link 🔗](./readme.html)
 
     In this file you can read more about the task to do.
 
 ## 📜 Report
 
--   report [Link 🔗](./AlessandroLambertini1938390.pdf)
+-   report [Link 🔗](./readme_PROF.html)
 
     In this file you can read more about the code and the enviroment of the project.
 
