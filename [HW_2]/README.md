@@ -171,3 +171,10 @@ all other directories. Send it on Google Classroom.
 ## 💯 Final score:
 
 Score: `34/30`
+
+## 🙋 Info
+
+for any doubt or clarification contact me on:
+
+-   send me an email at: lambertini.1938390@studenti.uniroma1.it
+-   send me a DM on instagram [Link 🔗](https://www.instagram.com/lambertinialessandro/)
