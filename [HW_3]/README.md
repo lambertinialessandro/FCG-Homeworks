@@ -165,3 +165,17 @@ for any doubt or clarification contact me on:
 
 -   send me an email at: lambertini.1938390@studenti.uniroma1.it
 -   send me a DM on instagram [Link 🔗](https://www.instagram.com/lambertinialessandro/)
+
+## 🎞️ Snapshots
+
+<p align="center">
+    <img src="./out/adaptive/01_surface_720_3.jpg" style="width: 750px;"></img>
+</p>
+
+<p align="center">
+    <img src="./out/adaptive/05_head1ss_720_3.jpg" style="width: 750px;"></img>
+</p>
+
+<p align="center">
+    <img src="./out/adaptive/06_easter_egg_720_3.jpg" style="width: 750px;"></img>
+</p>
