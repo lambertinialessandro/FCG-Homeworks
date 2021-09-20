@@ -6,6 +6,10 @@ First, Second and Third Homework for the course of Fundamentals of Computer Grap
 
 These homeworks are based on a C++ Library that is YOCTO/GL [Link 🔗](https://github.com/xelatihy/yocto-gl) [[Documentation 🔗](https://xelatihy.github.io/yocto-gl/)]
 
+## 💯 Final score:
+
+Score: `30/30`
+
 ## 🙋 Info
 
 for any doubt or clarification contact me on:
