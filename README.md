@@ -8,7 +8,7 @@ These homeworks are based on a C++ Library that is YOCTO/GL [Link 🔗](https://
 
 ## 💯 Final score:
 
-Final Score: `30/30`
+Score: `30/30`
 
 ## 🙋 Info
 
