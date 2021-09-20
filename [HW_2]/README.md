@@ -178,3 +178,25 @@ for any doubt or clarification contact me on:
 
 -   send me an email at: lambertini.1938390@studenti.uniroma1.it
 -   send me a DM on instagram [Link 🔗](https://www.instagram.com/lambertinialessandro/)
+
+## 🎞️ Snapshots
+
+<p align="center">
+    <img src="./out/path/03_metal_720_256.jpg" style="width: 750px;"></img>
+</p>
+
+<p align="center">
+    <img src="./out/path/05_refraction_720_256_.jpg" style="width: 750px;"></img>
+</p>
+
+<p align="center">
+    <img src="./out/path/07_hair_720_256.jpg" style="width: 750px;"></img>
+</p>
+
+<p align="center">
+    <img src="./out/my_scene/05_myscene_1024_256.jpg" style="width: 750px;"></img>
+</p>
+
+<p align="center">
+    <img src="./out/large_scenes/04_bistroexterior_1024_256.jpg" style="width: 750px;"></img>
+</p>
